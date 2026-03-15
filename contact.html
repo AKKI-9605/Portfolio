@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Akki</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow-x:hidden;
+}
+
+/* animated background */
+
+body::before{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(120deg,#0f172a,#020617);
+opacity:0.9;
+z-index:-1;
+}
+
+/* back button */
+
+.back{
+position:absolute;
+top:20px;
+left:20px;
+text-decoration:none;
+background:#2563eb;
+padding:10px 18px;
+border-radius:6px;
+color:white;
+transition:.3s;
+}
+
+.back:hover{
+background:#1d4ed8;
+}
+
+/* container */
+
+.container{
+background:#1e293b;
+padding:40px;
+border-radius:12px;
+width:90%;
+max-width:650px;
+box-shadow:0 0 30px rgba(0,0,0,.7);
+}
+
+/* headings */
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#94a3b8;
+margin-bottom:25px;
+}
+
+/* form */
+
+form{
+display:flex;
+flex-direction:column;
+}
+
+input,textarea{
+margin-bottom:15px;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#020617;
+color:white;
+outline:none;
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+/* glowing button */
+
+button{
+padding:12px;
+border:none;
+border-radius:6px;
+background:#22c55e;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 0 10px #22c55e;
+}
+
+button:hover{
+box-shadow:0 0 25px #22c55e;
+transform:scale(1.05);
+}
+
+/* social */
+
+.social{
+text-align:center;
+margin-top:30px;
+}
+
+.social a{
+text-decoration:none;
+background:#334155;
+padding:10px 16px;
+margin:8px;
+border-radius:6px;
+display:inline-block;
+color:white;
+transition:.3s;
+}
+
+.social a:hover{
+background:#475569;
+box-shadow:0 0 10px #38bdf8;
+}
+
+/* github card */
+
+.github-card{
+margin-top:25px;
+background:#020617;
+padding:15px;
+border-radius:8px;
+text-align:center;
+}
+
+.github-card a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* mobile */
+
+@media(max-width:600px){
+
+.container{
+padding:25px;
+}
+
+h1{
+font-size:24px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="index.html" class="back">⬅ Back</a>
+
+<div class="container">
+
+<h1>Contact Akki</h1>
+
+<p class="subtitle">
+Open for collaborations, coding projects and tech discussions.
+</p>
+
+<form action="https://formspree.io/f/mnjgboqq" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Write your message..." required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<div class="social">
+
+<h3>Connect With Me</h3>
+
+<a href="https://github.com/Akki-9605" target="_blank">GitHub</a>
+
+<a href="https://instagram.com/_mental_akki" target="_blank">Instagram</a>
+
+<a href="https://discord.com" target="_blank">Discord</a>
+
+</div>
+
+<div class="github-card">
+
+<p>View my coding projects on GitHub 👇</p>
+
+<a href="https://github.com/Akki-9605" target="_blank">
+github.com/Akki-9605
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html> 
