@@ -6,19 +6,13 @@
     <title>Sourabh Kumar Dhanda | Full-Stack Developer & UI/UX Designer</title>
     <meta name="description" content="Personal portfolio of Sourabh Kumar Dhanda (Akki/Akshit) - Student Developer, UI/UX Designer, and High-End Gamer from India.">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Embedded Premium CSS -->
     <style>
-        /* ==========================================================================
-           MINIMAL LUXURY DESIGN SYSTEM & CONSTANTS
-           ========================================================================== */
         :root {
             --bg-color: #0a0a0a;
             --surface-color: rgba(20, 20, 20, 0.7);
@@ -30,7 +24,6 @@
             --mouse-glow-color: rgba(212, 175, 55, 0.04);
             --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
-
         [data-theme="light"] {
             --bg-color: #fcfcfc;
             --surface-color: rgba(245, 245, 247, 0.7);
@@ -41,17 +34,12 @@
             --accent-gold-hover: #8c661b;
             --mouse-glow-color: rgba(181, 137, 38, 0.03);
         }
-
-        /* ==========================================================================
-           GLOBAL BASE STYLES
-           ========================================================================== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
-
         body {
             background-color: var(--bg-color);
             color: var(--text-primary);
@@ -59,7 +47,6 @@
             overflow-x: hidden;
             transition: background-color 0.5s ease, color 0.5s ease;
         }
-
         h1, h2, h3, .logo {
             font-family: 'Cinzel', serif;
             letter-spacing: 2px;
@@ -75,7 +62,6 @@
             padding: 140px 0;
         }
 
-        /* Scroll Progress Bar */
         #scroll-progress {
             position: fixed;
             top: 0;
@@ -86,7 +72,6 @@
             z-index: 9999;
         }
 
-        /* Mouse Glow Effect Background */
         .mouse-glow {
             position: fixed;
             top: 0;
@@ -100,7 +85,6 @@
             transition: opacity 0.3s ease;
         }
 
-        /* Premium Card Interaction Base */
         .card-glow {
             background: var(--surface-color);
             border: 1px solid var(--border-color);
@@ -115,9 +99,7 @@
             transform: translateY(-4px);
         }
 
-        /* ==========================================================================
-           PREMIUM UTILITY BUTTONS
-           ========================================================================== */
+   
         .btn {
             display: inline-flex;
             align-items: center;
@@ -165,9 +147,6 @@
             color: var(--bg-color) !important;
         }
 
-        /* ==========================================================================
-           NAVIGATION BAR SECTION
-           ========================================================================== */
         .navbar {
             position: fixed;
             top: 0;
@@ -243,9 +222,7 @@
             color: var(--text-primary);
         }
 
-        /* ==========================================================================
-           HERO / SPLASH SECTION
-           ========================================================================== */
+ 
         .hero-section {
             position: relative;
             height: 100vh;
@@ -316,10 +293,6 @@
             animation: bounce 2s infinite;
             color: var(--accent-gold);
         }
-
-        /* ==========================================================================
-           DYNAMIC COMPONENT HEADERS
-           ========================================================================== */
         .section-header {
             display: flex;
             align-items: center;
@@ -343,10 +316,6 @@
             height: 1px;
             background: linear-gradient(90deg, var(--border-color), transparent);
         }
-
-        /* ==========================================================================
-           ABOUT COMPONENT
-           ========================================================================== */
         .about-text-block {
             max-width: 800px;
             margin: 0 auto;
@@ -384,9 +353,6 @@
             color: var(--text-primary);
         }
 
-        /* ==========================================================================
-           SKILLS & PROGRESS BARS
-           ========================================================================== */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -438,10 +404,6 @@
         .reveal-active .progress {
             transform: scaleX(1);
         }
-
-        /* ==========================================================================
-           MINIMAL GITHUB PROJECT PORTAL DESIGN
-           ========================================================================== */
         .projects-container {
             display: flex;
             justify-content: center;
@@ -498,10 +460,6 @@
             font-size: 1rem;
             font-weight: 300;
         }
-
-        /* ==========================================================================
-           CONTACT FORM & LINK SECTION
-           ========================================================================== */
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1.2fr;
@@ -549,7 +507,6 @@
             transform: translateX(5px);
         }
 
-        /* Luxury Input Forms */
         .form-group {
             margin-bottom: 25px;
         }
@@ -585,10 +542,6 @@
             justify-content: center;
             margin-top: 10px;
         }
-
-        /* ==========================================================================
-           FOOTER COMPONENT & SIGNATURE
-           ========================================================================== */
         .footer {
             text-align: center;
             padding: 60px 0;
@@ -609,10 +562,6 @@
             color: var(--text-secondary);
             letter-spacing: 1px;
         }
-
-        /* ==========================================================================
-           ANIMATIONS & MEDIA QUERIES
-           ========================================================================== */
         @keyframes blink {
             50% { opacity: 0; }
         }
@@ -623,7 +572,6 @@
             60% { transform: translateY(-4px); }
         }
 
-        /* Dynamic Scroll Engine reveal states */
         .reveal {
             opacity: 0;
             transform: translateY(40px);
@@ -635,7 +583,6 @@
             transform: translateY(0);
         }
 
-        /* RESPONSIVE DESIGN BREAKPOINTS */
         @media (max-width: 992px) {
             .contact-grid {
                 grid-template-columns: 1fr;
@@ -683,13 +630,10 @@
 </head>
 <body>
 
-    <!-- Scroll Progress Bar -->
     <div id="scroll-progress"></div>
 
-    <!-- Mouse Glow Effect Elements -->
     <div class="mouse-glow"></div>
 
-    <!-- Navigation Header -->
     <header class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">SKD<span class="gold-dot">.</span></a>
@@ -710,7 +654,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero-section" id="home">
         <div class="hero-content">
             <h5 class="hero-subtitle">WELCOME TO THE PORTFOLIO OF</h5>
@@ -728,8 +671,6 @@
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
-
-    <!-- About Section -->
     <section class="about-section section-padding" id="about">
         <div class="container">
             <div class="section-header">
@@ -752,7 +693,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section class="skills-section section-padding" id="skills">
         <div class="container">
             <div class="section-header">
@@ -761,7 +701,6 @@
                 <div class="header-line"></div>
             </div>
             <div class="skills-grid">
-                <!-- Core Competencies -->
                 <div class="skills-container card-glow">
                     <h3>Core Mastery</h3>
                     <div class="skill-bar-wrapper">
@@ -781,8 +720,6 @@
                         <div class="progress-bar"><div class="progress" style="width: 25%"></div></div>
                     </div>
                 </div>
-
-                <!-- Learning & Adapting -->
                 <div class="skills-container card-glow">
                     <h3>Exploring & Advancing</h3>
                     <div class="skill-bar-wrapper">
@@ -801,8 +738,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Projects Section (Streamlined to Clean GitHub Portal) -->
     <section class="projects-section section-padding" id="projects">
         <div class="container">
             <div class="section-header">
@@ -811,8 +746,6 @@
                 <div class="header-line"></div>
             </div>
             <div class="projects-container">
-                
-                <!-- GITHUB PORTAL COMPONENT -->
                 <div class="github-portal-card card-glow">
                     <div class="portal-icon">
                         <i class="fab fa-github"></i>
@@ -834,8 +767,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact & Social Connect Section -->
     <section class="contact-section section-padding" id="contact">
         <div class="container">
             <div class="section-header">
@@ -844,7 +775,6 @@
                 <div class="header-line"></div>
             </div>
             <div class="contact-grid">
-                <!-- Contact Info Card -->
                 <div class="contact-info card-glow">
                     <h3>Let's Level Up Together</h3>
                     <p>Whether you want to recruit a highly motivated developer, collaborate on a project, or chat about high-end gaming logic, my inbox is always open.</p>
@@ -868,8 +798,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Contact Form Linked directly to Formspree -->
                 <div class="contact-form-container card-glow">
                     <form action="https://formspree.io/f/mnjgboqq" method="POST" id="portfolio-form">
                         <div class="form-group">
@@ -890,20 +818,11 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer with Thanks Signature -->
     <footer class="footer">
         <div class="thanks-message">Vielen Dank für Ihren Besuch! / Thanks For Visiting</div>
         <p class="copyright-text">&copy; 2026 Sourabh Kumar Dhanda. </p>
     </footer>
-
-    <!-- Embedded Premium JS Logic Engine -->
     <script>
-        /**
-         * SOURABH KUMAR DHANDA (AKKI / AKSHIT) PORTFOLIO ENGINE
-         * Architecture: Clean Vanilla ES6 JavaScript
-         */
-
         document.addEventListener('DOMContentLoaded', () => {
             initScrollProgress();
             initMouseGlow();
@@ -914,9 +833,6 @@
             initContactForm();
         });
 
-        /* ==========================================================================
-           SCROLL PROGRESS BAR ENGINE
-           ========================================================================== */
         function initScrollProgress() {
             const progressBar = document.getElementById('scroll-progress');
             window.addEventListener('scroll', () => {
@@ -927,10 +843,6 @@
                 }
             });
         }
-
-        /* ==========================================================================
-           INTERACTIVE MOUSE GLOW VECTOR ENGINE
-           ========================================================================== */
         function initMouseGlow() {
             const glow = document.querySelector('.mouse-glow');
             let mouseX = 0, mouseY = 0;
@@ -955,10 +867,6 @@
             document.addEventListener('mouseleave', () => glow.style.opacity = '0');
             document.addEventListener('mouseenter', () => glow.style.opacity = '1');
         }
-
-        /* ==========================================================================
-           TYPING ENGINE (SOURABH / AKKI / AKSHIT LOOP)
-           ========================================================================== */
         function initTypingAnimation() {
             const textTarget = document.getElementById('typing-text');
             const stringsToType = ["SOURABH KUMAR DHANDA", "AKKI", "AKSHIT"];
@@ -995,10 +903,6 @@
             
             runTypeCycle();
         }
-
-        /* ==========================================================================
-           MINIMAL LIGHT / DARK LIGHT THEME TRANSITION SYSTEM
-           ========================================================================== */
         function initThemeToggle() {
             const toggleBtn = document.getElementById('theme-toggle');
             const toggleIcon = toggleBtn.querySelector('i');
@@ -1025,10 +929,6 @@
                 }
             }
         }
-
-        /* ==========================================================================
-           MOBILE EXPANSION NAVIGATION DRAWER
-           ========================================================================== */
         function initMobileNavigation() {
             const toggleBtn = document.querySelector('.menu-toggle');
             const navMenu = document.querySelector('.nav-menu');
@@ -1048,10 +948,6 @@
                 });
             });
         }
-
-        /* ==========================================================================
-           SCROLL REVEAL & BAR VISUAL INTERSECTION OBSERVER
-           ========================================================================== */
         function initScrollReveal() {
             const targets = document.querySelectorAll('#about, #skills, #projects, #contact');
             targets.forEach(el => el.classList.add('reveal'));
@@ -1069,10 +965,6 @@
 
             targets.forEach(target => sectionObserver.observe(target));
         }
-
-        /* ==========================================================================
-           CONTACT DISPATCH INTERACTION ENGINE (ASYNC FORMSPREE INTEGRATION)
-           ========================================================================== */
         function initContactForm() {
             const form = document.getElementById('portfolio-form');
             if(!form) return;
